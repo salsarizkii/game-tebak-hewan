@@ -2,6 +2,7 @@
 #include <iostream>
 #include <time.h>
 
+using namespace std;
 #define hewanGol1 7
 
 // int randKambing();
@@ -14,18 +15,51 @@ int main(){
 
 // randKambing();   
     for(int i = 0; i < hewanGol1; i++){
-        srand((unsigned)time(NULL));
+        
         indexGol1 = (rand() % 7); 
-        temp[i] = indexGol1;
-    }
-    
+        
 
-for (int y = 0; y < hewanGol1; y++){
-    printf(" [%c] ", hewanKambing[temp[y]]);
-}
-
+        printf("%d", indexGol1);
+        
+        }
+        
 return 0;
+
 }
+
+// cout << rand() % hewanGol1 << " ";
+        // srand((unsigned)time(NULL));
+// temp[i] = indexGol1;
+
+// if ( (temp[1] = (rand() % 7)) != temp[0]){
+            
+        // }
+            
+        // temp[2] = (rand() % 7);
+        // temp[3] = (rand() % 7);
+        // temp[4] = (rand() % 7);
+        // temp[5] = (rand() % 7);
+        // temp[6] = (rand() % 7);
+        // temp[7] = (rand() % 7);
+
+        
+    // }
+    
+    // for(int j = 0; j < 7; j++){
+    //     printf("%d", temp[j]);
+    // }
+
+
+// int N = 100;
+//     for (int i = 0; i < 5; i++)
+//         cout << rand() % N << " ";
+// for (int y = 0; y < hewanGol1; y++){
+//     printf(" [%c] ", hewanKambing[temp[y]]);
+// }
+
+
+
+
 
 // int randOOm(){
 //     srand((unsigned)time(NULL));
