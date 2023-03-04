@@ -4,7 +4,7 @@
 
 #define hewanGol1 7
 
-int randKambing(int totalAlphabet);
+// int randKambing();
 char hewanKambing[hewanGol1] = {'K', 'A', 'M', 'B', 'I', 'N', 'G'};
 int indexGol1;
 int temp[7];
@@ -12,7 +12,13 @@ int temp[7];
 
 int main(){
 
-randKambing(hewanGol1);    
+// randKambing();   
+    for(int i = 0; i < hewanGol1; i++){
+        srand((unsigned)time(NULL));
+        indexGol1 = (rand() % 7); 
+        temp[i] = indexGol1;
+    }
+    
 
 for (int y = 0; y < hewanGol1; y++){
     printf(" [%c] ", hewanKambing[temp[y]]);
@@ -21,21 +27,26 @@ for (int y = 0; y < hewanGol1; y++){
 return 0;
 }
 
-int randKambing(int totalAlphabet){
-    for(int i = 0; i < hewanGol1; i++){
-        srand(time(0));
-        indexGol1 = (rand() % 7);
-        // temp[i] = indexGol1;
-        for(int check = 0; check < hewanGol1; check++){
-            if (indexGol1 == temp[check]){
-                randKambing(hewanGol1);
-            } else if (indexGol1 != temp[check]){
-                temp[i] = indexGol1;
-            }
+// int randOOm(){
+//     srand((unsigned)time(NULL));
+//     indexGol1 = (rand() % 7);
+//     return indexGol1;
+// }
 
-        }
-    }
-}
+// int randKambing(){
+//     for(int i = 0; i < hewanGol1; i++){
+//         temp[i] = randOOm();
+//         // int indexGol = randOOm();
+//         // for(int check = 0; check < (hewanGol1 - 1); check++){
+//         //     if (indexGol != temp[check]){
+//         //         indexGol = randOOm(); }
+//             // } else if (indexGol != temp[check]){
+//             //     temp[i] = indexGol;
+//             // }
+
+//         }
+//     // }
+// }
 
 
 /*          trial error             */
