@@ -13,19 +13,35 @@ int temp[7];
 
 int main(){
 
-// randKambing();   
-    for(int i = 0; i < hewanGol1; i++){
-        
-        indexGol1 = (rand() % 7); 
-        
+        temp[0] = (rand() % 7);
+        temp[1] = (rand() % 7);
+        temp[2] = (rand() % 7);
+        temp[3] = (rand() % 7);
+        temp[4] = (rand() % 7);
+        temp[5] = (rand() % 7);
+        temp[6] = (rand() % 7);
+         
 
-        printf("%d", indexGol1);
-        
-        }
+        for(int j = 0; j < 7; j++){
+        printf(" %c", hewanKambing[temp[j]]);
+    }
+    
         
 return 0;
 
 }
+
+// for(int i = 0; i < hewanGol1; i++){
+        
+//         indexGol1 = (rand() % 7); 
+//         //     if(indexGol1 == temp[0] || temp[i - 1]){
+//         //         main();
+//         // }
+//         temp[i] = indexGol1;
+//         printf(" % c", hewanKambing[temp[i]]);
+        
+//         }
+
 
 // cout << rand() % hewanGol1 << " ";
         // srand((unsigned)time(NULL));
