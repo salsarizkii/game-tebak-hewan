@@ -1,2 +1,1 @@
-nt indexGol1 = 0;
-        // srand(time(0));
+  printf("%d", temp[0]);
