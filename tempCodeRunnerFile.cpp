@@ -8,7 +8,7 @@ char hewanKambing[hewanGol1] = {'K', 'A', 'M', 'B', 'I', 'N', 'G'};
 int main(){
 
 int indexGol1;
-int tempGol1[hewanGol1] = {};
+int tempGol1[hewanGol1];
 
 for(int i = 0; i < hewanGol1; i++){
     indexGol1 = (rand() % hewanGol1);
@@ -44,8 +44,8 @@ for(int i = 0; i < hewanGol1; i++){
 //     tempGol1[1] = hewanKambing[indexGol1];
 // }
 for (int y = 0; y < hewanGol1; y++){
-    printf(" [%c] ", hewanKambing[tempGol1[y]]);
+    printf(" %c", hewanKambing[tempGol1[y]]);
 }
 
-return tempGol1[hewanGol1] = {};
+
 }
