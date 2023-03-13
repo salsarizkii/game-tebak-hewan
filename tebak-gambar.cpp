@@ -13,14 +13,8 @@ int temp[7];
 
 int main(){
 
-        temp[0] = (rand() % 7);
-        temp[1] = (rand() % 7);
-        temp[2] = (rand() % 7);
-        temp[3] = (rand() % 7);
-        temp[4] = (rand() % 7);
-        temp[5] = (rand() % 7);
-        temp[6] = (rand() % 7);
-         
+
+
 
         for(int j = 0; j < 7; j++){
         printf(" %c", hewanKambing[temp[j]]);
